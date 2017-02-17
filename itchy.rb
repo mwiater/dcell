@@ -1,6 +1,6 @@
 require 'dcell'
 
-DCell.start :id => "itchy", :addr => "tcp://127.0.0.1:9001", :registry => { :adapter => 'redis', :host => "192.168.99.104" }
+DCell.start :id => "itchy", :addr => "tcp://0.0.0.0:9001", :registry => { :adapter => 'redis', :host => "192.168.99.104" }
 
 class Itchy
   include Celluloid

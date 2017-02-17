@@ -1,6 +1,6 @@
 require 'dcell'
 
-DCell.start :id => "scratchy", :addr => "tcp://127.0.0.1:9002", :registry => { :adapter => 'redis', :host => "192.168.99.104" }
+DCell.start :id => "scratchy", :addr => "tcp://0.0.0.0:9002", :registry => { :adapter => 'redis', :host => "192.168.99.104" }
 
 itchy_node = DCell::Node["itchy"]
 

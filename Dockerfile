@@ -13,6 +13,7 @@ ADD . /app
 RUN chown -R nobody:nogroup /app
 USER nobody
 EXPOSE 9001
+EXPOSE 9002
 WORKDIR /app
 
 RUN bundle install
